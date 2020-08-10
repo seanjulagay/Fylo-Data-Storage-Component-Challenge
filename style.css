@@ -1,0 +1,157 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0c122c;
+    background-image: url("images/bg/bg-desktop.png");
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-position-y: 46vh;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main, .storage {
+    color: white;
+    margin: 30vh 1vw;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.main {
+    background-color: #1e2c69;
+    max-height: 200px;
+    max-width: 330px;
+    border-radius: 10px;
+    border-top-right-radius: 120px;  
+}
+
+#logo {
+    margin: 40px 30px 0;
+    display: inline-block;
+}
+
+#button-container {
+    margin: 20px 30px 0;
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.button {
+    background-color: #0c122c;
+    width: 50px;
+    height: 50px;
+    margin: 0 7px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.storage {
+    background-color: #1e2c69;   
+    max-height: 150px;
+    max-width: 500px;
+    position: relative;
+    top: 50px;
+    border-radius: 10px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+#usage-bubble {
+    background-color: white;
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    bottom: 85%;
+    right: 8%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#usage-number {
+    color: black;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+
+#usage-gb-left {
+    color: #bcbbc0;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+#usage-bubble-src {
+    border: 15px solid white;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+
+#usage-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+#usage-bar, #usage-bar-fill {
+    border-radius: 50px;
+}
+
+#usage-bar {
+    background-color: #151e49;
+    margin: 10px 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#usage-bar-fill {
+    background-image: linear-gradient(to right, #ff9f96, #e85896);
+    width: 81.5%;
+    height: 70%;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+#usage-bar-cap {
+    background-color: white;
+    width: 13px;
+    height: 70%;
+    border-radius: 100px;
+    position: relative;
+    left: calc(100% - 15px);
+}
+
+#min-gb, #max-gb {
+    position: absolute;
+    bottom: 35px;
+}
+
+#max-gb {
+    right: 35px;
+}
